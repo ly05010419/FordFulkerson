@@ -1,0 +1,7 @@
+C:\Users\yongli\source\repos\FordFulkerson\FordFulkerson\bin\Debug\FordFulkerson.exe.config
+C:\Users\yongli\source\repos\FordFulkerson\FordFulkerson\bin\Debug\FordFulkerson.exe
+C:\Users\yongli\source\repos\FordFulkerson\FordFulkerson\bin\Debug\FordFulkerson.pdb
+C:\Users\yongli\source\repos\FordFulkerson\FordFulkerson\obj\Debug\FordFulkerson.csprojResolveAssemblyReference.cache
+C:\Users\yongli\source\repos\FordFulkerson\FordFulkerson\obj\Debug\FordFulkerson.csproj.CoreCompileInputs.cache
+C:\Users\yongli\source\repos\FordFulkerson\FordFulkerson\obj\Debug\FordFulkerson.exe
+C:\Users\yongli\source\repos\FordFulkerson\FordFulkerson\obj\Debug\FordFulkerson.pdb

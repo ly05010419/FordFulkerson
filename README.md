@@ -1,18 +1,14 @@
-# 目的：两点的最短距离
+# 目的：求两点之间的最大流
 
 
-## Dijkstra
-> 1. 初始化
-> 2. 已访问集合V 和 未访问集合W
-> 3. V={startNode},W={andere Node}   
-> 4. 更新所以V里面节点的子节点，
-> 5. 在W里找到最小节点，加入V 然后回到4）
-
-
-![GITHUB](https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif "git圖示")
+## fordFulkerson
+> 1. 首先使用Dijkstra 或者 MooreBellmanFord求两点之间的最小路径（增广路径）
+> 2. 创建ResidualGraph（残留网络）
+> 3. 继续在残留网络中使用Dijkstra 或者 MooreBellmanFord求两点之间的最小路径（增广路径）
+> 4. 直到没有增广路径为止
+> 5. 把所有的增广路径的容量加起来就是最大流
 
 
 
-## MooreBellmanFord
-
-> 遍历所以边，更新节点的weight，此过程循环Anzahl von Node 遍。
+https://www.youtube.com/watch?v=Z8gcjuS0Vb8
+http://www.cnblogs.com/gaochundong/p/ford_fulkerson_maximum_flow_algorithm.html

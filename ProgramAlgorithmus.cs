@@ -8,10 +8,6 @@ namespace namespaceAlgorithmus
 {
     class Algorithmus
     {
-
-
-        public double result = 0;
-
         public void zeitOfAlgorithmus(string path, String methode, int startId, int endI, bool directed)
         {
             Console.WriteLine(methode);
@@ -26,7 +22,6 @@ namespace namespaceAlgorithmus
             {
                 algorithmus.fordFulkerson(graph, startId, endI);
             }
-
 
             DateTime after = System.DateTime.Now;
             TimeSpan ts = after.Subtract(befor);
@@ -105,6 +100,7 @@ namespace namespaceAlgorithmus
 
             List<Node> visitList = new List<Node>();
             List<Node> unVisitList = new List<Node>();
+
             //init
             foreach (Node node in graph.nodeList)
             {
@@ -153,9 +149,7 @@ namespace namespaceAlgorithmus
             if (noPath)
             {
                 return null;
-            }
-            else
-            {
+            }else{
                 List<Edge> edges = new List<Edge>();
                 findVater(graph.nodeList[endId], graph, edges);
 
@@ -216,40 +210,24 @@ namespace namespaceAlgorithmus
                 }
             }
 
-            bool negativeCycle = false;
-
             for (int i = 0; i < graph.nodeList.Count; i++)
             {
-                //Console.WriteLine("-------------------------------------");
                 foreach (Edge e in graph.edgeList)
                 {
-                    // Console.WriteLine("" + e.startNode+"----"+ e.endNode);
-
                     double weight = e.startNode.weight + e.capacity;
 
                     if (e.startNode.weight < double.MaxValue && weight < e.endNode.weight)
                     {
-                        // Console.WriteLine("node:"+ e.endNode);
-                        //Console.WriteLine("weight:" + weight);
-                        //Console.WriteLine("vater:" + e.startNode);
-
                         e.endNode.previousNode = e.startNode;
                         e.endNode.weight = weight;
                     }
-
                 }
-
             }
 
-            if (negativeCycle) {
-                return null;
-            } else {
-                List<Edge> edges = new List<Edge>();
-                findVater(graph.nodeList[endId], graph, edges);
+            List<Edge> edges = new List<Edge>();
+            findVater(graph.nodeList[endId], graph, edges);
 
-                return edges;
-            }
-
+            return edges;
         }
     }
 }

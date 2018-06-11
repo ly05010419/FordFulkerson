@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="fluss\Fluss.txt" />
+    <Content Include="fluss\Fluss2.txt" />
     <Content Include="fluss\G_1_2.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

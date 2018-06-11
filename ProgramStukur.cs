@@ -190,6 +190,7 @@ namespace namespaceStuktur
 
             this.capacity = minCapacity;
         }
+        
 
     }
 

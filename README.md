@@ -1,7 +1,7 @@
 # 目的：求两点之间的最大流
 
 
-## fordFulkerson
+## Edmunds-Karp von FordFulkerson
 > 1. 首先使用Dijkstra 或者 MooreBellmanFord求两点之间的最小路径（增广路径）
 > 2. 创建ResidualGraph（残留网络）
 > 3. 继续在残留网络中使用Dijkstra 或者 MooreBellmanFord求两点之间的最小路径（增广路径）
